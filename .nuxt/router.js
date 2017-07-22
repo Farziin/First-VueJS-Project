@@ -6,11 +6,11 @@ import Router from 'vue-router'
 Vue.use(Router)
 
 
-const _9507b4fa = () => import('D:\\Projects\\FirstVueProject\\pages\\index.vue' /* webpackChunkName: "pages/index" */)
+const _5bf9c63e = () => import('D:\\Projects\\First-VueJS-Project\\pages\\index.vue' /* webpackChunkName: "pages/index" */)
 
-const _5e0c1004 = () => import('D:\\Projects\\FirstVueProject\\pages\\posts.vue' /* webpackChunkName: "pages/posts" */)
+const _0489b0bf = () => import('D:\\Projects\\First-VueJS-Project\\pages\\posts.vue' /* webpackChunkName: "pages/posts" */)
 
-const _8c801e5a = () => import('D:\\Projects\\FirstVueProject\\pages\\comments.vue' /* webpackChunkName: "pages/comments" */)
+const _6f335238 = () => import('D:\\Projects\\First-VueJS-Project\\pages\\comments.vue' /* webpackChunkName: "pages/comments" */)
 
 
 
@@ -48,17 +48,17 @@ export function createRouter () {
     routes: [
   		{
 			path: "/",
-			component: _9507b4fa,
+			component: _5bf9c63e,
 			name: "index"
 		},
 		{
 			path: "/posts",
-			component: _5e0c1004,
+			component: _0489b0bf,
 			name: "posts"
 		},
 		{
 			path: "/comments",
-			component: _8c801e5a,
+			component: _6f335238,
 			name: "comments"
 		}
     ]

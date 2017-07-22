@@ -4,7 +4,7 @@
   <section>
 
     <!--top navigation of the page-->
-    <div class="top_navigation">
+    <div class="top-navigation">
       <a href="/" style="margin-left: 4%">Home</a>
       <a href="posts" class="active">Posts</a>
       <a href="comments">Comments</a>
@@ -22,7 +22,7 @@
 
 <!--script of the page-->
 <script>
-  import * as axios from 'axios'
+  import axios from 'axios'
 
   // give data from wordpress's post page
   export default {
@@ -38,13 +38,13 @@
 <style>
 
   /* Style the navigation bar */
-  .top_navigation {
+  .top-navigation {
     background-color: #333;
     overflow: hidden;
   }
 
   /* Style the links inside the navigation bar */
-  .top_navigation a {
+  .top-navigation a {
     font-family: Ubuntu;
     float: left;
     display: block;
@@ -56,13 +56,13 @@
   }
 
   /* Change the color of links on hover */
-  .top_navigation a:hover {
+  .top-navigation a:hover {
     background-color: #ddd;
     color: black;
   }
 
   /* Add a color to the active/current link */
-  .top_navigation a.active {
+  .top-navigation a.active {
     background-color: #4CAF50;
     color: white;
   }

@@ -2,13 +2,13 @@
 <template>
   <section class="container">
     <div>
-      <img src="~assets/Personal2.jpg" height="200px" width="200px">
+      <img src="~assets/personal-picture.jpg" height="200px" width="200px">
       <h1 class="title">
         Farzin Heidary
       </h1>
       <!--link for my github account-->
       <a style="font-family: 'Segoe UI'; font-size: 30px">Github: </a>
-      <a href="https://github.com/farziin" style="text-decoration: none; font-family: 'Segoe UI'; font-size: 30px;">@farziin</a>
+      <a href="https://github.com/farziin" class="github-link">@farziin</a>
 
       <h2 class="subtitle">
         First Nuxt Project
@@ -23,7 +23,14 @@
   </section>
 </template>
 
-<style>
+<style scoped>
+
+  .github-link{
+    font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
+    text-decoration: none;
+    font-size: 30px;
+  }
+
   .container
   {
     min-height: 100vh;

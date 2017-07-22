@@ -12,10 +12,10 @@
 
     <!--show comments that come from wordpress-->
     <div v-for="item in items" class="comment">
-      <img v-bind:src="item.author_avatar_urls" class="contact_image">
+      <img v-bind:src="item.author_avatar_urls" class="contact-image">
       <span class="name">{{ item.author_name }}</span>
       <br>
-      <div class="comment_text" v-html="item.content.rendered"></div>
+      <div class="comment-text" v-html="item.content.rendered"></div>
     </div>
 
   </section>
@@ -23,7 +23,7 @@
 
 <!--script of the page-->
 <script>
-  import * as axios from 'axios'
+  import axios from 'axios'
 
   // give comments from digiato's website
   export default {
@@ -39,13 +39,13 @@
 <style>
 
   /* Style the navigation bar */
-  .top_navigation {
+  .top-navigation {
     background-color: #333;
     overflow: hidden;
   }
 
   /* Style the links inside the navigation bar */
-  .top_navigation a {
+  .top-navigation a {
     font-family: Ubuntu;
     float: left;
     display: block;
@@ -57,13 +57,13 @@
   }
 
   /* Change the color of links on hover */
-  .top_navigation a:hover {
+  .top-navigation a:hover {
     background-color: #ddd;
     color: black;
   }
 
   /* Add a color to the active/current link */
-  .top_navigation a.active {
+  .top-navigation a.active {
     background-color: #4CAF50;
     color: white;
   }
@@ -84,7 +84,7 @@
   }
 
   /* set size and position od contact image */
-  .contact_image {
+  .contact-image {
     height: 50px;
     width: 50px;
     float: left;
@@ -98,7 +98,7 @@
   }
 
   /* style of the text of comments */
-  .comment_text {
+  .comment-text {
     font-family: IRANSansWeb;
     text-align: right;
     dir: rtl;
